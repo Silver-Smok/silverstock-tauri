@@ -9,6 +9,8 @@ This template should help get you started developing with Tauri in vanilla HTML,
 
 ## Getting Started
 
+npm install --save-dev @tauri-apps/cli
+
 npm run tauri dev
 
 npm run tauri build
