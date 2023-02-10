@@ -4,11 +4,13 @@
       "beforeBuildCommand": "",
       "beforeDevCommand": "",
       "devPath": "../src",
-      "distDir": "../src"
+      "distDir": "../src",
+      "withGlobalTauri": true
+      
     },
     "package": {
       "productName": "SilverStock",
-      "version": "0.0.0"
+      "version": "1.0.0"
     },
     "tauri": {
       "allowlist": {
@@ -62,7 +64,12 @@
         "csp": null
       },
       "updater": {
-        "active": false
+        "active": true,
+        "endpoints": [
+            "https://tauri-api.p.silver-smok.com/{{target}}"
+        ],
+        "dialog": true,
+        "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDIzODMzRTg1NzE5OERFMTIKUldRUzNwaHhoVDZESXhxNnJNSnRqUFJpb3JQN1lOL3Rma1dMTWVoZVMrc2FNaHE1OWtsUkU5YlgK"
       },
       "windows": [
         {
